@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/taskerz/__init__.py
+src/taskerz/core.py
+src/taskerz/log.py
+src/taskerz/server.py
+src/taskerz.egg-info/PKG-INFO
+src/taskerz.egg-info/SOURCES.txt
+src/taskerz.egg-info/dependency_links.txt
+src/taskerz.egg-info/requires.txt
+src/taskerz.egg-info/top_level.txt
+tests/test_main.py
