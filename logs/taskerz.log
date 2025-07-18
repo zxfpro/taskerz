@@ -1,0 +1,8 @@
+2025-07-16 10:16:17,615 - taskerz_logger - INFO - FastAPI 应用启动中...
+2025-07-16 10:16:17,615 - taskerz_logger - INFO - 日志级别设置为: INFO, 环境: dev
+2025-07-16 10:16:17,617 - taskerz_logger - INFO - APScheduler 启动成功。
+2025-07-16 10:16:17,622 - taskerz_logger - INFO - FastAPI 应用关闭。
+2025-07-16 10:16:25,922 - taskerz_logger - INFO - FastAPI 应用启动中...
+2025-07-16 10:16:25,922 - taskerz_logger - INFO - 日志级别设置为: INFO, 环境: dev
+2025-07-16 10:16:25,923 - taskerz_logger - INFO - APScheduler 启动成功。
+2025-07-16 16:58:21,894 - taskerz_logger - INFO - FastAPI 应用关闭。

@@ -2,21 +2,21 @@ import logging
 import os
 from logging.handlers import RotatingFileHandler
 
-class Logger:
+class LoggerClient:
     """
-    单例模式实现的日志模块。
+    单例模式实现的客户端日志模块。
     提供统一的日志记录功能，支持文件和控制台输出，可配置日志级别和轮转。
     """
     _instance = None
-    LOG_LEVEL = os.environ.get("LOG_LEVEL", "INFO").upper()
+    LOG_LEVEL = os.environ.get("CLIENT_LOG_LEVEL", "INFO").upper()
     LOG_DIR = "logs"
-    LOG_FILE_NAME = "taskerz.log"
+    LOG_FILE_NAME = "tasker_client_mac.log"
     LOG_FILE_PATH = os.path.join(LOG_DIR, LOG_FILE_NAME)
 
     def __new__(cls):
         if cls._instance is None:
-            cls._instance = super(Logger, cls).__new__(cls)
-            cls._instance.logger = logging.getLogger("taskerz_logger")
+            cls._instance = super(LoggerClient, cls).__new__(cls)
+            cls._instance.logger = logging.getLogger("tasker_client_mac_logger")
             cls._instance.setup_logging()
         return cls._instance
 
@@ -84,5 +84,5 @@ class Logger:
         # 添加文件处理器
         self._add_file_handler()
 
-# 实例化 Logger，确保单例模式生效
-logger_instance = Logger().logger
+# 实例化 LoggerClient，确保单例模式生效
+logger_client_instance = LoggerClient().logger
